@@ -1,61 +1,7 @@
-<!doctype html>
-<html lang="it">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Vicini</title>
-<meta name="description" content="Condividi o segui una posizione con un codice.">
-<link rel="icon" href="https://cdn.jsdelivr.net/gh/vicini-app/download@35c38ebd46c0f1de164ce067ed47f54133af6161/icon.png">
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#070b14;color:#f8fafc;min-height:100vh;
-background-image:radial-gradient(900px 420px at 50% -8%,rgba(37,99,235,.5),transparent 55%),radial-gradient(500px 280px at 90% 10%,rgba(52,211,153,.18),transparent 50%)}
-.wrap{max-width:960px;margin:0 auto;padding:40px 20px 72px}
-.hero{text-align:center;margin-bottom:40px}
-.icon{width:92px;height:92px;border-radius:24px;box-shadow:0 16px 40px rgba(0,0,0,.45)}
-h1{font-size:clamp(2.6rem,9vw,3.6rem);font-weight:800;letter-spacing:-.04em;margin:18px 0 8px}
-.tag{color:#94a3b8;font-size:1.2rem;margin-bottom:28px}
-.btn{display:inline-flex;align-items:center;gap:10px;background:#2563eb;color:#fff;font-weight:700;font-size:1.15rem;padding:17px 34px;border-radius:999px;text-decoration:none;box-shadow:0 12px 32px rgba(37,99,235,.45)}
-.ver{margin-top:14px;color:#64748b;font-size:.9rem}
-.rail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:0 0 36px}
-@media(max-width:780px){.rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:8px;-webkit-overflow-scrolling:touch}.card{min-width:78%;scroll-snap-align:center}}
-.card{background:rgba(18,26,43,.85);border:1px solid rgba(148,163,184,.12);border-radius:24px;padding:16px 14px 18px;text-align:center}
-.card img{width:100%;max-width:240px;aspect-ratio:390/844;object-fit:cover;object-position:top;border-radius:18px;margin:0 auto 14px;display:block;box-shadow:0 10px 28px rgba(0,0,0,.4)}
-.n{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:999px;background:rgba(56,189,248,.16);color:#38bdf8;font-weight:800;font-size:.8rem;margin-bottom:8px}
-.card h2{font-size:1.05rem;margin-bottom:4px}
-.card p{color:#94a3b8;font-size:.95rem}
-.privacy{max-width:480px;margin:0 auto 36px;text-align:center;color:#94a3b8;font-size:.95rem;padding:14px 16px;border-radius:14px;background:rgba(52,211,153,.07);border:1px solid rgba(52,211,153,.18)}
-.privacy b{color:#34d399;font-weight:600}
-.bottom{text-align:center}
-footer{margin-top:40px;text-align:center;color:#475569;font-size:.85rem}
-</style>
-</head>
-<body>
-<div class="wrap">
-<header class="hero">
-<img class="icon" src="https://cdn.jsdelivr.net/gh/vicini-app/download@35c38ebd46c0f1de164ce067ed47f54133af6161/icon.png" alt="Vicini">
-<h1>Vicini</h1>
-<p class="tag">Un codice. Una mappa. Ecco tutto.</p>
-<a class="btn" href="https://github.com/vincenzuccio000-coder/vicini/releases/latest/download/vicini-arm64.apk">Scarica per Android</a>
-<div class="ver" id="ver">Versione 1.6.0 · gratis</div>
-</header>
-<section class="rail" aria-label="Come funziona">
-<article class="card"><div class="n">1</div><img src="https://cdn.jsdelivr.net/gh/vicini-app/download@35c38ebd46c0f1de164ce067ed47f54133af6161/home.jpg" alt=""><h2>Apri</h2><p>La mappa è subito lì.</p></article>
-<article class="card"><div class="n">2</div><img src="https://cdn.jsdelivr.net/gh/vicini-app/download@35c38ebd46c0f1de164ce067ed47f54133af6161/condividi.jpg" alt=""><h2>Condividi o segui</h2><p>Basta un codice.</p></article>
-<article class="card"><div class="n">3</div><img src="https://cdn.jsdelivr.net/gh/vicini-app/download@35c38ebd46c0f1de164ce067ed47f54133af6161/movimenti.jpg" alt=""><h2>Movimenti</h2><p>Percorsi salvati, sulla mappa.</p></article>
-</section>
-<p class="privacy"><b>Privacy.</b> GPS solo se condividi. Chi ti segue serve il tuo codice.</p>
-<div class="bottom"><a class="btn" href="https://github.com/vincenzuccio000-coder/vicini/releases/latest/download/vicini-arm64.apk">Scarica Vicini</a></div>
-<footer>2026 Vicini</footer>
-</div>
-<script>
-fetch('https://raw.githubusercontent.com/vincenzuccio000-coder/vicini/main/manifest.json?t='+Date.now(),{cache:'no-store'})
-.then(function(r){return r.json()}).then(function(m){
-var el=document.getElementById('ver');
-if(el&&m.versionName) el.textContent='Versione '+m.versionName+' · gratis';
-document.querySelectorAll('a.btn').forEach(function(a){ if(m.apkUrl) a.href=m.apkUrl+'?v='+encodeURIComponent(m.versionName||''); });
-}).catch(function(){});
-</script>
-</body>
-</html>
+<!doctype html><html lang="it"><head>
+<meta charset="utf-8"><meta http-equiv="refresh" content="0;url=https://github.com/vincenzuccio000-coder/vicini/releases/latest/download/vicini-arm64.apk">
+<title>Download Vicini</title></head>
+<body style="font-family:system-ui;padding:40px;text-align:center">
+<p>Download Vicini…</p>
+<p><a href="https://github.com/vincenzuccio000-coder/vicini/releases/latest/download/vicini-arm64.apk">Tocca qui se non parte</a></p>
+</body></html>
